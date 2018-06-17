@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>aboutWindow</class>
+ <widget class="QDialog" name="aboutWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>A propos de</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Img_rc/aboutIcon.png</normaloff>Img_rc/aboutIcon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#aboutWindow{
+	border-image: url(:/Img_rc/img2.jpg);
+}
+QPushButton{
+	border-image: none;
+	font: 75 16pt;
+	font-family: 'Indie Flower', cursive, &quot;Bauhaus 93&quot;;
+	font-weight: bold;
+	background: rgba(158, 127, 139, 0.6);
+	color: rgb(255, 255, 255);
+	border-image: none;
+	border-radius: 8px;
+}
+QPushButton:hover {
+   background: rgba(232, 12, 122, 0.6);
+    color: rgba(59,3,31);
+}
+#retourBtn{
+	width:10px;
+}</string>
+  </property>
+  <property name="locale">
+   <locale language="French" country="France"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_1">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="cindyBtn">
+         <property name="text">
+          <string>Cindy Carrillo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="stephBtn">
+         <property name="text">
+          <string>Stephane Bernard</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cyrilBtn">
+         <property name="text">
+          <string>Cyril Delpierre</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="loickBtn">
+         <property name="text">
+          <string>Loick Appere</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="retourBtn">
+         <property name="text">
+          <string>X</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Img_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

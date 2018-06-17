@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>instructionsWindow</class>
+ <widget class="QDialog" name="instructionsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1049</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Instructions</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Img_rc/manualIcon.png</normaloff>Img_rc/manualIcon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	border-image: url(:/Img_rc/img4.jpg);
+}
+QLabel{
+	font: 20pt;
+	font-family: 'Patrick Hand', cursive, &quot;Georgia&quot;;
+	font-weight: bold;
+	background: rgba(232, 12, 122, 0.0);
+	color: rgb(237, 223, 238);
+}
+QPushButton{
+	border-image: none;
+	font: 75 24pt;
+	font-family: 'Indie Flower', cursive, &quot;Georgia&quot;;
+	font-weight: bold;
+	background: rgba(158, 127, 139, 0.4);
+	color:white;
+	border-image: none;
+	border-radius: 8px;
+}
+QPushButton:hover {
+   background: rgba(232, 12, 122, 0.6);
+    color: rgba(59,3,31);
+}</string>
+  </property>
+  <property name="locale">
+   <locale language="French" country="France"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Le gameplay du jeu repose sur l'utilisation des touches fléchées du clavier&lt;br/&gt;ou des touches ( Z - Q - S - D ) pour déplacer les tuiles vers la gauche, la &lt;br/&gt;droite, le haut ou le bas. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Lors d'un mouvement, l'ensemble des tuiles du plateau sont déplacés &lt;br/&gt;dans la même direction jusqu'à rencontrer les bords du plateau ou une &lt;br/&gt;autre tuile sur leur chemin. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Si deux tuiles, ayant le même nombre, entrent en collision durant le &lt;br/&gt;mouvement, elles fusionnent en une nouvelle tuile de valeur double &lt;br/&gt;(par ex. : deux tuiles de valeur « 2 » donnent une tuile de valeur « 4 »). &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;À chaque mouvement, une tuile portant un 2 ou un 4 apparaît dans une &lt;br/&gt;case vide de manière aléatoire.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="accepterBtn">
+         <property name="text">
+          <string>  Accepter  </string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Img_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

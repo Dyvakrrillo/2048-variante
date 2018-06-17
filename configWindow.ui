@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>configWindow</class>
+ <widget class="QWidget" name="configWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>643</width>
+    <height>434</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Réglages</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Img_rc/configIcon.png</normaloff>Img_rc/configIcon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(0, 0, 0);
+}
+#musicComboBox,#gameModeComboBox{
+	border-image: none;
+	color: rgb(255, 255, 255);
+	background: rgba(212, 16, 104, 0.6);
+	font: 15pt;
+	font-family: 'Patrick Hand', cursive, &quot;Magneto&quot;;
+	font-weight: bold;
+
+    border-radius: 6px;
+	width: 200px;
+}
+QComboBox::drop-down {
+	border-image:none;
+	color: rgb(255, 255, 255);
+	font: 16pt;
+	background: rgba(212, 16, 104, 0.6);
+	border-radius: 6px;
+}
+QComboBox::down-arrow {
+	border-image: url(:/Img_rc/Down-Arrow-Transparent-Image.png);
+}
+QComboBox QAbstractItemView {
+	border-image: none;
+	color: rgb(255, 255, 255);
+	background: rgba(212, 16, 104, 0.6);
+	font: 16pt;
+    border-radius: 6px;
+	selection-background-color:rgb(138, 138, 138);
+}
+#soundBtn{
+	border-image: none;
+}
+ QCheckBox::indicator {
+     width: 80px;
+     height: 80px;
+}
+QCheckBox::indicator:checked{
+	border-image: url(:/Img_rc/sound.png);
+}
+QCheckBox::indicator:unchecked{
+	border-image: url(:/Img_rc/soundOFF.png);
+}
+#titleGameMode,#titleMusic{
+	font: 75 22pt;
+	font-family: 'Rock Salt', cursive, &quot;Magneto&quot;;
+	font-weight: bold;
+	border-image: none;
+	background-color:none;
+	border-image: none;	
+	color: rgb(193, 82, 149);
+}
+#accepterBtn{
+	border-image: none;
+	font: 75 24pt;
+	font-family: 'Indie Flower', cursive, &quot;Bauhaus 93&quot;;
+	font-weight: bold;
+	background: rgba(158, 127, 139, 0.6);
+	color: rgb(255, 255, 255);
+	border-image: none;
+	border-radius: 8px;
+}
+#accepterBtn:hover {
+   background: rgba(232, 12, 122, 0.6);
+    color: rgba(59,3,31);
+}
+QLabel{
+	color: rgb(255, 255, 255);
+	border-image: none;
+}
+</string>
+  </property>
+  <property name="locale">
+   <locale language="French" country="France"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout1">
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="titleGameMode">
+         <property name="text">
+          <string>Jouer en mode... </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QComboBox" name="gameModeComboBox">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <item>
+            <property name="text">
+             <string>Bledina</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ça passe</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ouh la...</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ça devient serieux</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7x7=49</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cauchemard</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelStr">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="titleMusic">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Musique du jeu :</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QComboBox" name="musicComboBox">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <item>
+            <property name="text">
+             <string>Seven Twenty</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Church of 8 Wheels</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Firefly</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hi Q</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Renegade Jubilee</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="soundBtn">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="locale">
+            <locale language="French" country="France"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <property name="tristate">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="accepterBtn">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>  Accepter  </string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Img_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

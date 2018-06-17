@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>518</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>2048</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Img_rc/2048.png</normaloff>Img_rc/2048.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	border-image: url(:/Img_rc/img1.jpg);
+}
+QVBoxLayout{
+	border-image: none;
+}
+#playGameBtn,#configBtn,#instructionsBtn,#aboutBtn,QAbstractButton{
+	border-image: none;
+	font: 75 23pt;
+	font-family: 'Indie Flower', cursive, &quot;Bauhaus 93&quot;;
+	font-weight: bold;
+	background: rgba(158, 127, 139, 0.6);
+	color: rgb(255, 255, 255);
+	border-image: none;
+	border-radius: 8px;
+	height: 35px;
+}
+#playGameBtn:hover ,#configBtn:hover ,#instructionsBtn:hover ,#aboutBtn:hover,QAbstractButton:hover {
+   background: rgba(232, 12, 122, 0.6);
+    color: rgba(59,3,31);
+}
+#title2048{	
+	font: 72pt &quot;Bauhaus 93&quot;;
+	border-image: none;
+	background-color:none;
+	border-image: none;
+	color: rgb(227, 227, 76);
+}
+QMessageBox{
+	font: 16pt;
+	font-family: 'Indie Flower', cursive, &quot;Bauhaus 93&quot;;
+	border-image:url(./Img_rc/img5.jpg);
+}
+QMessageBox QLabel {
+    border-image: none;
+	color:white;
+	font-weight: bold;
+}
+#quitBtn{
+	border-image: url(:/Img_rc/quit.png);
+	background:none;
+	width:50px;
+    height: 50px;
+}
+#quitBtn:hover{
+	border-image: url(:/Img_rc/quitHover.png);
+	background:none;
+}</string>
+  </property>
+  <property name="locale">
+   <locale language="French" country="France"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="welcomeLayoutV">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="quitBtn">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="layoutUp">
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="title2048">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;2048&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="playGameBtn">
+            <property name="text">
+             <string>  Jouer  </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="instructionsBtn">
+            <property name="text">
+             <string>  Instructions  </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="configBtn">
+            <property name="text">
+             <string>  Réglages  </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="aboutBtn">
+            <property name="text">
+             <string>  À propos de  </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Img_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
