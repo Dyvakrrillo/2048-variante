@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="Img_rc">
+    <file>4.jpg</file>
+    <file>5.jpg</file>
+    <file>1.jpg</file>
+    <file>2.jpg</file>
+    <file>3.jpg</file>
+    <file>toggle-oFF.png</file>
+    <file>toggle-oN.png</file>
+  </qresource>
+</RCC>
